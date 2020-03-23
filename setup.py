@@ -11,7 +11,7 @@ setuptools.setup(
     description='Tools for stellar tracks & isochrones.',  # short description
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='http://github.com/hypergravity/berliner',
+    url='http://github.com/jiadonglee/berliner',
     packages=setuptools.find_packages(),
     license='MIT',
     classifiers=["Development Status :: 5 - Production/Stable",
