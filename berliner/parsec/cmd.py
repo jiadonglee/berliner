@@ -461,11 +461,11 @@ class CMD:
 def convert_to_table(this_output):
     """ convert isochrones to tables """
     line0 = np.where(["# Zini" in this_line for this_line in this_output])[0]
-    #print(len(this_output), line0)
-    line1 = np.where(["#isochrone terminated" in this_line for this_line in this_output])[0].astype(int)
+    print(len(this_output), line0)
+    line1 = np.where(["#isochrone terminated" in this_line for this_line in this_output])[0]
     line = np.append(line0, line1)
     n_isocs = len(line) - 1
-    #print(n_isocs)
+    print(n_isocs)
 
     if n_isocs == 1:
         # only one table
